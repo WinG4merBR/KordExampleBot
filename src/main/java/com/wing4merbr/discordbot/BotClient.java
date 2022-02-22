@@ -17,7 +17,7 @@ public class BotClient extends ListenerAdapter
 {
     public static void main(String[] args) throws LoginException
     {
-        JDABuilder.createLight("ODg5OTE4MTUzOTMxNTE3OTgz.YUoO3Q.gGImDxnxJVb0gFyCVQgOzhnTlsQ", GatewayIntent.GUILD_MESSAGES)
+        JDABuilder.createLight("bottoken", GatewayIntent.GUILD_MESSAGES)
                 .addEventListeners(new BotClient())
                 .setActivity(Activity.playing("uwu"))
                 .build();
@@ -28,7 +28,7 @@ public class BotClient extends ListenerAdapter
         Message msg = event.getMessage();
         if (msg.getContentRaw().equals("<@!889918153931517983>")) {
             MessageChannel channel = event.getChannel();
-            channel.sendMessage("da oi");
+            channel.sendMessage("owo");
         }
     }
 
