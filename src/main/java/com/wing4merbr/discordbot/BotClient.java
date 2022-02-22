@@ -17,7 +17,7 @@ public class BotClient extends ListenerAdapter
 {
     public static void main(String[] args) throws LoginException
     {
-        JDABuilder.createLight("bottoken", GatewayIntent.GUILD_MESSAGES)
+        JDABuilder.createLight("ODg5OTE4MTUzOTMxNTE3OTgz.YUoO3Q.gGImDxnxJVb0gFyCVQgOzhnTlsQ", GatewayIntent.GUILD_MESSAGES)
                 .addEventListeners(new BotClient())
                 .setActivity(Activity.playing("uwu"))
                 .build();
